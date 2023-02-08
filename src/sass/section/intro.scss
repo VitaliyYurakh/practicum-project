@@ -1,0 +1,15 @@
+.sec-intro {
+	max-width: 100%;
+	margin-bottom: 120px;
+	
+	&__skills {
+		margin-top: 8px;
+	}
+}
+
+@media (max-width: $screen-sm) {
+	
+	.sec-intro {
+		margin-bottom: 64px;
+	}
+}

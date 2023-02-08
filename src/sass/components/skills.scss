@@ -1,0 +1,44 @@
+.skills {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, minmax(40px, auto));
+	grid-auto-rows: minmax(40px, auto);
+	gap: 24px 16px;
+	min-height: 172px;
+	padding: 24px 32px;
+	background-color: $bgColorTwo;
+	border-radius: 20px;
+	
+	&__item {
+		display: flex;
+		justify-content: stretch;
+		align-items: center;
+		max-width: 400px;
+	}
+	
+	&__icons {
+		flex: 0 0 40px;
+		width: 40px;
+		margin-right: 12px;
+		border-radius: 10px;
+	}
+}
+
+@media (max-width: $screen-sm) {
+	
+	.skills {
+		grid-template-columns: repeat(2, 1fr);
+		
+		&__description {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+}
+
+@media (max-width: $screen-xs) {
+	
+	.skills {
+		grid-template-columns: 1fr;
+	}
+}

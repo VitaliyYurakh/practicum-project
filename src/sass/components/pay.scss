@@ -1,0 +1,83 @@
+.pay {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+        'content content image'
+        'footer footer image';
+	padding: 24px 32px;
+	background-color:$bgColorWhite;
+	border-radius: 24px;
+	
+	&__info {
+		grid-area: content;
+	}
+	
+	&__title {
+		margin-bottom: 8px;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 44px;
+	}
+	
+	&__text {
+		margin-bottom: 16px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26px;
+	}
+	
+	&__price {
+		margin-bottom: 4px;
+		font-size: 20px;
+		line-height: 24px;
+		
+		&_regular {
+			font-weight: 400;
+		}
+	}
+	
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		grid-area: image;
+	}
+	
+	&__img {
+		width: 100%;
+	}
+}
+
+@media (max-width: $screen-lg) {
+	
+	.pay {
+		grid-template-areas:
+        'content content image'
+        'footer footer footer';
+	}
+}
+
+@media (max-width: $screen-md) {
+	
+	.pay {
+		padding: 32px;
+		grid-template-areas:
+		'content content content'
+        'footer footer footer';
+		
+		&__wrapper {
+			display: none;
+		}
+		
+		&__title {
+			font-size: 32px;
+			line-height: 28px;
+		}
+	}
+}
+
+@media (max-width: $screen-xs) {
+	
+	.pay {
+		padding: 24px 16px;
+	}
+}

@@ -1,0 +1,21 @@
+.site {
+
+  &_wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  &_main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+
+  &_footer {
+    margin-top: auto;
+  }
+
+}

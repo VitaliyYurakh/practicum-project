@@ -1,0 +1,64 @@
+.sec-road {
+	max-width: 100%;
+	margin-bottom: 120px;
+	
+	&__title {
+		margin-bottom: 48px;
+	}
+	
+	&__list {
+		margin-bottom: 24px;
+	}
+	
+	&__actions {
+		display: flex;
+		justify-content: center;
+		margin-top: 24px;
+	}
+}
+
+@media (max-width: $screen-xl) {
+	
+	.sec-road {
+		
+		&__title {
+			padding: 0 32px;
+		}
+	}
+}
+
+@media (max-width: $screen-lg) {
+	
+	.sec-road {
+		
+		&__title {
+			margin-bottom: 24px;
+		}
+	}
+}
+
+@media (max-width: $screen-md) {
+	
+	.sec-road {
+		
+		&__actinos {
+			margin-top: 16px;
+		}
+	}
+}
+
+@media (max-width: $screen-sm) {
+	
+	.sec-road {
+		margin-bottom: 64px;
+	}
+}
+
+@media (max-width: $screen-xs) {
+	.sec-road {
+		
+		&__title {
+			padding: 0 16px;
+		}
+	}
+}

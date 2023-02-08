@@ -1,0 +1,14 @@
+.sec-title {
+	font-weight: 700;
+	font-size:  48px;
+	line-height: 52px;
+}
+
+@media (max-width: $screen-lg) {
+	
+	.sec-title {
+		font-size:  28px;
+		line-height: 32px;
+	}
+}
+

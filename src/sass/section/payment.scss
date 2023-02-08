@@ -1,0 +1,15 @@
+.sec-payment {
+	max-width: 100%;
+	margin-bottom: 120px;
+	
+	&__block {
+		margin-bottom: 8px;
+	}
+}
+
+@media (max-width: $screen-sm) {
+	
+	.sec-about {
+		margin-bottom: 64px;
+	}
+}

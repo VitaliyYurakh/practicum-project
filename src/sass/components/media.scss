@@ -1,0 +1,109 @@
+.media {
+	
+	&__block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 120px;
+		text-align: left;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+		
+		&_reverse {
+			flex-direction: row-reverse;
+		}
+	}
+	
+	&__content {
+		flex-basis: 42%;
+		margin: 0 0 0 40px;
+		
+		&_normal {
+			margin: 0 40px 0 0 ;
+		}
+	}
+	
+	&__title {
+		margin: 0 0 8px;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 32px;
+	}
+	
+	&__description {
+		font-weight: 400;
+		font-size:  18px;
+		line-height: 26px;
+	}
+	
+	&__wrap {
+		max-width: 58%;
+	}
+	
+	&__img {
+		max-width: 100%;
+		border-radius: 10px;
+	}
+	
+	&__video {
+		max-width: 100%;
+		border-radius: 10px;
+	}
+}
+
+@media (max-width: $screen-xl) {
+	
+	.media {
+		
+		&__block {
+			padding: 0 32px;
+		}
+	}
+}
+
+@media (max-width: $screen-md) {
+	
+	.media {
+		
+		&__block {
+			flex-direction: column-reverse;
+			align-items: start;
+			padding: 0;
+			margin-bottom: 8px;
+			background: $bgColorWhite;
+			border-radius: 20px;
+		}
+		
+		&__content {
+			flex-basis: 100%;
+			margin: 16px 32px;
+		}
+		
+		&__title {
+			font-size: 20px;
+			line-height: 24px;
+		}
+		
+		&__description {
+			font-size:  16px;
+			line-height: 22px;
+		}
+		
+		&__wrap {
+			max-width: 100%;
+			margin: auto;
+		}
+	}
+}
+
+@media (max-width: $screen-xs) {
+	
+	.media {
+		
+		&__content {
+			margin: 16px 12px;
+		}
+	}
+}

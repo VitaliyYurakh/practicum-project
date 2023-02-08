@@ -1,0 +1,149 @@
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border: none;
+	
+	&__link {
+		position: relative;
+		height: 50px;
+		min-width: 472px;
+		padding: 0 16px;
+		border-radius: 14px;
+		font-size: 16px;
+		color: $fontColorOne;
+		
+		&_white {
+			height: 60px;
+			background-color: $bgColorWhite;
+			box-shadow: 0 1px 12px 2px rgba(36, 36, 36, 0.07);
+			
+			&:hover {
+				background-color: #f5f5f5;
+			}
+		}
+		
+		&_black {
+			background-color: $bgColorBlack;
+			color: $fontColorTwo;
+			
+			&-big {
+				width: 100%;
+				height: 60px;
+			}
+			
+			&:hover {
+				background-color: #000000;
+			}
+		}
+		
+		&_gray {
+			min-width: 132px;
+			background-color: $bgColor;
+			border-radius: 8px;
+			
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.12);
+			}
+			
+			&:active {
+				background-color: rgba(0, 0, 0, 0.25);
+			}
+		}
+		
+		&:active {
+			transition-duration: 0.1s;
+			transform: scale(0.95);
+		}
+	}
+	
+	&:active,
+	&:focus {
+		outline: none;
+	}
+	
+	&__actions {
+		border-radius: 50%;
+		background-color: $bgColorWhite;
+		
+		&_prev,
+		&_next {
+			width: 40px;
+			height: 40px;
+			box-shadow: 0 1px 4px 1px rgba(36, 36, 36, 0.07);
+		}
+		
+		&_next {
+			transform: scaleX(-1);
+		}
+		
+		&_plus {
+			width: 36px;
+			height: 36px;
+			transform: rotate(45deg);
+			transition-property: transform, color, background-color;
+			transition-duration: 0.3s;
+			transition-timing-function: ease;
+			
+			&-black {
+				
+				&:hover {
+					color: $fontColorTwo;
+					background-color: #000000
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-md) {
+	.btn {
+		
+		&__link {
+			
+			&_black,
+			&_white {
+				min-width: 344px;
+			}
+		}
+		
+		&__actions {
+			
+			&_plus {
+				
+				&:hover {
+					color: $fontColorTwo;
+					background-color: #000000
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-xs) {
+	.btn {
+		
+		&__link {
+			
+			&_black,
+			&_white {
+				min-width: 320px;
+			}
+			
+			&_gray {
+				width: 100%;
+			}
+		}
+		
+		&__actions {
+			
+			&_plus {
+				
+				svg {
+					width: 16px;
+				}
+			}
+		}
+	}
+}

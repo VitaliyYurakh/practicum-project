@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'YS Text';
+	src: url('../fonts/YSText-Regular-Web.woff2') format('woff2'),
+	url('../fonts/YSText-Regular-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'YS Text';
+	src: url('../fonts/YSText-Medium-Web.woff2') format('woff2'),
+	url('../fonts/YSText-Medium-Web.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'YS Text';
+	src: url('../fonts/YSText-Bold-Web.woff2') format('woff2'),
+	url('../fonts/YSText-Bold-Web') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
